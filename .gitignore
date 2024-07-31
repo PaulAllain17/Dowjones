@@ -1,0 +1,83 @@
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Build results
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.log
+*.lib
+*.nupkg
+*.snk
+*.user
+*.userosscache
+*.suo
+*.unsuccessfulbuild
+*.build.cs
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+.vscode/**/*
+.history/
+.ionide/
+
+# Auto-generated files
+Generated_Code/
+
+# Backup & report files from converting an old project file
+# to a newer Visual Studio version
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+ServiceFabricBackup/
+*.rptproj.bak
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# IIS
+/.vs/
+*.vspscc
+*.vssscc
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+
+# Others
+.nuget/
+*.DS_Store
+*.sass-cache/
+*.dbmdl
+*.jfm
