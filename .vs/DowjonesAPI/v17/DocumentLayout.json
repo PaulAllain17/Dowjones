@@ -1,12 +1,58 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "DowjonesAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "DowjonesAPI\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T14:39:46.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "DowjonesAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\appsettings.json",
+              "RelativeToolTip": "DowjonesAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-31T14:31:13.309Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
