@@ -9,5 +9,6 @@ namespace DowjonesAPI.Repositories
 		Task<Person?> GetPerson(int id);
 		void RemovePerson(Person person);
 		void UpdatePerson(Person person);
+		Task<bool> PersonExists(int id);
 	}
 }

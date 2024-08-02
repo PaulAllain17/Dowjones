@@ -9,5 +9,6 @@ namespace DowjonesAPI.Repositories
 		Task<Company?> GetCompany(int id);
 		void RemoveCompany(Company company);
 		void UpdateCompany(Company company);
+		Task<bool> CompanyExists(int id);
 	}
 }

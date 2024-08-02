@@ -49,7 +49,7 @@ namespace DowjonesAPI.Controllers
 		public async Task<ActionResult<Person>> PutPerson(Person person)
 		{
 			var id = person.Id;
-			var personExists = await PersonExists(id);
+			var personExists = await _personRepository.PersonExists(id);
 			if (!personExists)
 			{
 				return BadRequest($"Person with Id: {id} does not exist.");
@@ -73,12 +73,6 @@ namespace DowjonesAPI.Controllers
 			_personRepository.RemovePerson(person);
 
 			return NoContent();
-		}
-
-		private async Task<bool> PersonExists(int id)
-		{
-			var person = await _personRepository.GetPerson(id);
-			return person is not null;
 		}
 	}
 }

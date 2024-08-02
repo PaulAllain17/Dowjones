@@ -36,5 +36,11 @@ namespace DowjonesAPI.Repositories
 		{
 			_mockedDatabase.UpdateCompany(company);
 		}
+
+		public async Task<bool> CompanyExists(int id)
+		{
+			var company = await GetCompany(id);
+			return company is not null;
+		}
 	}
 }

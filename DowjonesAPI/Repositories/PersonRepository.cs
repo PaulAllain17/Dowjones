@@ -36,5 +36,11 @@ namespace DowjonesAPI.Repositories
 		{
 			_mockedDatabase.UpdatePerson(person);
 		}
+
+		public async Task<bool> PersonExists(int id)
+		{
+			var person = await GetPerson(id);
+			return person is not null;
+		}
 	}
 }

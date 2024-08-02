@@ -49,7 +49,7 @@ namespace DowjonesAPI.Controllers
 		public async Task<ActionResult<Company>> PutCompany(Company company)
 		{
 			var id = company.Id;
-			var companyExists = await CompanyExists(id);
+			var companyExists = await _companyRepository.CompanyExists(id);
 			if (!companyExists)
 			{
 				return BadRequest($"Company with Id: {id} does not exist.");
@@ -73,12 +73,6 @@ namespace DowjonesAPI.Controllers
 			_companyRepository.RemoveCompany(company);
 
 			return NoContent();
-		}
-
-		private async Task<bool> CompanyExists(int id)
-		{
-			var company = await _companyRepository.GetCompany(id);
-			return company is not null;
 		}
 	}
 }
