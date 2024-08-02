@@ -1,5 +1,5 @@
 using DowjonesAPI.Models;
-using DowjonesAPI.Repositories;
+using DowjonesAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DowjonesAPI.Controllers
@@ -8,25 +8,25 @@ namespace DowjonesAPI.Controllers
 	[Route("[controller]")]
 	public class PersonController : ControllerBase
 	{
-		private readonly IPersonRepository _personRepository;
+		private readonly IPersonService _personService;
 
-		public PersonController(IPersonRepository personRepository)
+		public PersonController(IPersonService personService)
 		{
-			_personRepository = personRepository;
+			_personService = personService;
 		}
 
 		// GET: api/Entities
 		[HttpGet]
 		public async Task<ActionResult<IEnumerable<Person>>> GetPeople()
 		{
-			return await _personRepository.GetPeople();
+			return await _personService.GetPeople();
 		}
 
 		// GET: api/Entities/5
 		[HttpGet("{id}")]
 		public async Task<ActionResult<Person>> GetPerson(int id)
 		{
-			var person = await _personRepository.GetPerson(id);
+			var person = await _personService.GetPerson(id);
 
 			if (person == null)
 			{
@@ -40,7 +40,7 @@ namespace DowjonesAPI.Controllers
 		[HttpPost]
 		public ActionResult<Person> PostPerson(Person person)
 		{
-			_personRepository.AddPerson(person);
+			_personService.AddPerson(person);
 			return CreatedAtAction("GetPerson", new { id = person.Id }, person);
 		}
 
@@ -49,13 +49,13 @@ namespace DowjonesAPI.Controllers
 		public async Task<ActionResult<Person>> PutPerson(Person person)
 		{
 			var id = person.Id;
-			var personExists = await _personRepository.PersonExists(id);
+			var personExists = await _personService.PersonExists(id);
 			if (!personExists)
 			{
 				return BadRequest($"Person with Id: {id} does not exist.");
 			}
 
-			_personRepository.UpdatePerson(person);
+			_personService.UpdatePerson(person);
 
 			return CreatedAtAction("GetPerson", new { id }, person);
 		}
@@ -64,13 +64,13 @@ namespace DowjonesAPI.Controllers
 		[HttpDelete("{id}")]
 		public async Task<IActionResult> DeletePerson(int id)
 		{
-			var person = await _personRepository.GetPerson(id);
+			var person = await _personService.GetPerson(id);
 			if (person == null)
 			{
 				return NotFound();
 			}
 
-			_personRepository.RemovePerson(person);
+			_personService.RemovePerson(person);
 
 			return NoContent();
 		}

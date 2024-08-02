@@ -1,9 +1,17 @@
-﻿using DowjonesAPI.Models;
+﻿using DowjonesAPI.Data;
+using DowjonesAPI.Models;
 
 namespace DowjonesAPI.Utilities
 {
 	public class CompanyUtility : ICompanyUtility
 	{
+		private readonly IMockedDatabase _mockedDatabase;
+
+		public CompanyUtility(IMockedDatabase mockedDatabase)
+		{
+			_mockedDatabase = mockedDatabase;
+		}
+
 		public void ProcessOwnedCompaniesOnCreation(List<OwnedCompany> ownedCompanies, List<Company> companies)
 		{
 			if (ownedCompanies != null)
@@ -19,7 +27,13 @@ namespace DowjonesAPI.Utilities
 					{
 						if (ownedCompany.Percentage > 60)
 						{
-							companyFromList.IsControlled = true;
+							_mockedDatabase.UpdateCompany(new Company
+							{
+								Id = companyFromList.Id,
+								Name = companyFromList.Name,
+								OwnedCompanies = companyFromList.OwnedCompanies,
+								IsControlled = true
+							});
 						}
 					}
 				}
@@ -44,11 +58,23 @@ namespace DowjonesAPI.Utilities
 					{
 						if (ownedCompany.Percentage > 60)
 						{
-							companyFromList.IsControlled = true;
+							_mockedDatabase.UpdateCompany(new Company
+							{
+								Id = companyFromList.Id,
+								Name = companyFromList.Name,
+								OwnedCompanies = companyFromList.OwnedCompanies,
+								IsControlled = true
+							});
 						}
 						else if (previousOwnedCompanies.Find(c => c.CompanyId == ownedCompany.CompanyId).Percentage > 60)
 						{
-							companyFromList.IsControlled = false;
+							_mockedDatabase.UpdateCompany(new Company
+							{
+								Id = companyFromList.Id,
+								Name = companyFromList.Name,
+								OwnedCompanies = companyFromList.OwnedCompanies,
+								IsControlled = false
+							});
 						}
 					}
 				}

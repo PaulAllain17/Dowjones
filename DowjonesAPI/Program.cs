@@ -13,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<ICompanyService, CompanyService>();
+builder.Services.AddSingleton<IPersonService, PersonService>();
 builder.Services.AddSingleton<IPersonRepository, PersonRepository>();
 builder.Services.AddSingleton<ICompanyRepository, CompanyRepository>();
 builder.Services.AddSingleton<ICompanyUtility, CompanyUtility>();

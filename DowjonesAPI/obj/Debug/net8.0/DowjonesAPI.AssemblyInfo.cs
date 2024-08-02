@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DowjonesAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2e11644dc419aabed110e481f10b6365f4f920e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c371b70021c5e998f9e162a25238dc71c00ddf8")]
 [assembly: System.Reflection.AssemblyProductAttribute("DowjonesAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DowjonesAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
