@@ -1,12 +1,40 @@
-﻿using DowjonesAPI.Models;
+﻿using DowjonesAPI.Data;
+using DowjonesAPI.Models;
 
 namespace DowjonesAPI.Repositories
 {
 	public class CompanyRepository : ICompanyRepository
 	{
-		public List<Company> GetAllCompanies()
+		private readonly IMockedDatabase _mockedDatabase;
+
+		public CompanyRepository(IMockedDatabase mockDatabase)
 		{
-			throw new NotImplementedException();
+			_mockedDatabase = mockDatabase;
+		}
+
+		public void AddCompany(Company company)
+		{
+			_mockedDatabase.AddCompany(company);
+		}
+
+		public Task<List<Company>> GetCompanies()
+		{
+			return _mockedDatabase.GetCompanies();
+		}
+
+		public async Task<Company?> GetCompany(int id)
+		{
+			return await _mockedDatabase.GetCompany(id);
+		}
+
+		public void RemoveCompany(Company company)
+		{
+			_mockedDatabase.RemoveCompany(company);
+		}
+
+		public void UpdateCompany(Company company)
+		{
+			_mockedDatabase.UpdateCompany(company);
 		}
 	}
 }

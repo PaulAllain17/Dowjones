@@ -5,36 +5,36 @@ namespace DowjonesAPI.Repositories
 {
 	public class PersonRepository : IPersonRepository
 	{
-		private readonly IMockedDatabase _mockDatabase;
+		private readonly IMockedDatabase _mockedDatabase;
 
 		public PersonRepository(IMockedDatabase mockDatabase)
 		{
-			_mockDatabase = mockDatabase;
+			_mockedDatabase = mockDatabase;
 		}
 
 		public void AddPerson(Person person)
 		{
-			_mockDatabase.AddPerson(person);
+			_mockedDatabase.AddPerson(person);
 		}
 
 		public Task<List<Person>> GetPeople()
 		{
-			return _mockDatabase.GetPeople();
+			return _mockedDatabase.GetPeople();
 		}
 
 		public Task<Person?> GetPerson(int id)
 		{
-			return _mockDatabase.GetPerson(id);
+			return _mockedDatabase.GetPerson(id);
 		}
 
 		public void RemovePerson(Person person)
 		{
-			_mockDatabase.RemovePerson(person);
+			_mockedDatabase.RemovePerson(person);
 		}
 
 		public void UpdatePerson(Person person)
 		{
-			_mockDatabase.UpdatePerson(person);
+			_mockedDatabase.UpdatePerson(person);
 		}
 	}
 }

@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\repositories\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\repositories\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\repositories\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\repositories\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\repositories\\icompanyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\repositories\\icompanyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\data\\mockeddatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\data\\mockeddatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\repositories\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\data\\imockeddatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\data\\imockeddatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\data\\mockeddatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\data\\mockeddatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\repositories\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|solutionrelative:dowjonesapi\\repositories\\ipersonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E228AE7-A7C0-42B4-9474-9F1B82F17E4C}|DowjonesAPI\\DowjonesAPI.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,67 +66,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CompanyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Repositories\\CompanyRepository.cs",
+              "RelativeDocumentMoniker": "DowjonesAPI\\Repositories\\CompanyRepository.cs",
+              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Repositories\\CompanyRepository.cs",
+              "RelativeToolTip": "DowjonesAPI\\Repositories\\CompanyRepository.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T08:47:56.402Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonRepository.cs",
-              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Repositories\\PersonRepository.cs",
-              "RelativeDocumentMoniker": "DowjonesAPI\\Repositories\\PersonRepository.cs",
-              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Repositories\\PersonRepository.cs",
-              "RelativeToolTip": "DowjonesAPI\\Repositories\\PersonRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAADgvxUAAAAhAAAA",
+              "DocumentIndex": 1,
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "DowjonesAPI\\Controllers\\CompanyController.cs",
+              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "DowjonesAPI\\Controllers\\CompanyController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA6wBUAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T16:26:05.192Z",
+              "WhenOpened": "2024-08-02T08:40:28.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICompanyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Repositories\\ICompanyRepository.cs",
+              "RelativeDocumentMoniker": "DowjonesAPI\\Repositories\\ICompanyRepository.cs",
+              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Repositories\\ICompanyRepository.cs",
+              "RelativeToolTip": "DowjonesAPI\\Repositories\\ICompanyRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T08:47:41.034Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IMockedDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Data\\IMockedDatabase.cs",
-              "RelativeDocumentMoniker": "DowjonesAPI\\Data\\IMockedDatabase.cs",
-              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Data\\IMockedDatabase.cs",
-              "RelativeToolTip": "DowjonesAPI\\Data\\IMockedDatabase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T16:28:13.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonController.cs",
-              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Controllers\\PersonController.cs",
-              "RelativeDocumentMoniker": "DowjonesAPI\\Controllers\\PersonController.cs",
-              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Controllers\\PersonController.cs",
-              "RelativeToolTip": "DowjonesAPI\\Controllers\\PersonController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAgwC8AAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T16:25:37.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "MockedDatabase.cs",
               "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Data\\MockedDatabase.cs",
               "RelativeDocumentMoniker": "DowjonesAPI\\Data\\MockedDatabase.cs",
               "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Data\\MockedDatabase.cs",
               "RelativeToolTip": "DowjonesAPI\\Data\\MockedDatabase.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAEwBwAAAAAAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAIA8wCQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-01T16:27:51.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "IMockedDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Data\\IMockedDatabase.cs",
+              "RelativeDocumentMoniker": "DowjonesAPI\\Data\\IMockedDatabase.cs",
+              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Data\\IMockedDatabase.cs",
+              "RelativeToolTip": "DowjonesAPI\\Data\\IMockedDatabase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T16:28:13.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Program.cs",
               "RelativeDocumentMoniker": "DowjonesAPI\\Program.cs",
@@ -126,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "IPersonRepository.cs",
               "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Repositories\\IPersonRepository.cs",
               "RelativeDocumentMoniker": "DowjonesAPI\\Repositories\\IPersonRepository.cs",
@@ -139,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Models\\Person.cs",
               "RelativeDocumentMoniker": "DowjonesAPI\\Models\\Person.cs",
@@ -151,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Entity.cs",
               "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Models\\Entity.cs",
               "RelativeDocumentMoniker": "DowjonesAPI\\Models\\Entity.cs",
@@ -163,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\appsettings.json",
               "RelativeDocumentMoniker": "DowjonesAPI\\appsettings.json",
@@ -175,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Company.cs",
               "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Models\\Company.cs",
               "RelativeDocumentMoniker": "DowjonesAPI\\Models\\Company.cs",
@@ -187,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "EntityController.cs",
               "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Controllers\\EntityController.cs",
               "RelativeDocumentMoniker": "DowjonesAPI\\Controllers\\EntityController.cs",
@@ -196,6 +221,38 @@
               "ViewState": "AQIAAEEAAAAAAAAAAAAhwEkAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T14:39:46.446Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Repositories\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "DowjonesAPI\\Repositories\\PersonRepository.cs",
+              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Repositories\\PersonRepository.cs",
+              "RelativeToolTip": "DowjonesAPI\\Repositories\\PersonRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAWwBUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T16:26:05.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "DowjonesAPI\\Controllers\\PersonController.cs",
+              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "DowjonesAPI\\Controllers\\PersonController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T09:19:42.966Z",
+              "EditorCaption": ""
             }
           ]
         }

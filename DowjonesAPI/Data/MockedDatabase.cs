@@ -17,6 +17,19 @@ namespace DowjonesAPI.Data
 			}
 		];
 
+		private List<Company> companies = [
+			new Company()
+			{
+				Id = 1,
+				Name = "Microsoft"
+			},
+			new Company()
+			{
+				Id = 2,
+				Name = "Apple"
+			}
+		];
+
 		public void AddPerson(Person person)
 		{
 			persons.Add(person);
@@ -39,6 +52,30 @@ namespace DowjonesAPI.Data
 			{
 				persons[index] = person;
 			}
+		}
+
+		public async Task<List<Company>> GetCompanies() => companies;
+
+		public async Task<Company?> GetCompany(int id)
+			=> companies.Find(c => c.Id == id);
+
+		public void AddCompany(Company company)
+		{
+			companies.Add(company);
+		}
+
+		public void UpdateCompany(Company company)
+		{
+			var index = companies.FindIndex(p => p.Id == company.Id);
+			if (index >= 0)
+			{
+				companies[index] = company;
+			}
+		}
+
+		public void RemoveCompany(Company company)
+		{
+			companies.Remove(company);
 		}
 	}
 }
