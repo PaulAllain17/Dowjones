@@ -22,14 +22,23 @@ namespace DowjonesAPI.Data
 			persons.Add(person);
 		}
 
-		public async Task<List<Person>> GetAllPersons() => persons;
+		public async Task<List<Person>> GetPeople() => persons;
 
-		public async Task<Person> GetPerson(int id)
+		public async Task<Person?> GetPerson(int id)
 			=> persons.Find(p => p.Id == id);
 
 		public void RemovePerson(Person person)
 		{
 			persons.Remove(person);
+		}
+
+		public void UpdatePerson(Person person)
+		{
+			var index = persons.FindIndex(p => p.Id == person.Id);
+			if (index >= 0)
+			{
+				persons[index] = person;
+			}
 		}
 	}
 }

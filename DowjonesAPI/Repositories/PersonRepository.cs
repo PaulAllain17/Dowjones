@@ -17,12 +17,12 @@ namespace DowjonesAPI.Repositories
 			_mockDatabase.AddPerson(person);
 		}
 
-		public Task<List<Person>> GetAllPersons()
+		public Task<List<Person>> GetPeople()
 		{
-			return _mockDatabase.GetAllPersons();
+			return _mockDatabase.GetPeople();
 		}
 
-		public Task<Person> GetPerson(int id)
+		public Task<Person?> GetPerson(int id)
 		{
 			return _mockDatabase.GetPerson(id);
 		}
@@ -30,6 +30,11 @@ namespace DowjonesAPI.Repositories
 		public void RemovePerson(Person person)
 		{
 			_mockDatabase.RemovePerson(person);
+		}
+
+		public void UpdatePerson(Person person)
+		{
+			_mockDatabase.UpdatePerson(person);
 		}
 	}
 }

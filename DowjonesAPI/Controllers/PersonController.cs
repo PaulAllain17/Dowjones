@@ -17,14 +17,14 @@ namespace DowjonesAPI.Controllers
 
 		// GET: api/Entities
 		[HttpGet]
-		public async Task<ActionResult<IEnumerable<Entity>>> GetPerson()
+		public async Task<ActionResult<IEnumerable<Person>>> GetPeople()
 		{
-			return await _personRepository.GetAllPersons();
+			return await _personRepository.GetPeople();
 		}
 
 		// GET: api/Entities/5
 		[HttpGet("{id}")]
-		public async Task<ActionResult<Entity>> GetPerson(int id)
+		public async Task<ActionResult<Person>> GetPerson(int id)
 		{
 			var person = await _personRepository.GetPerson(id);
 
@@ -36,42 +36,28 @@ namespace DowjonesAPI.Controllers
 			return person;
 		}
 
-		//// PUT: api/Entities/5
-		//[HttpPut("{id}")]
-		//public async Task<IActionResult> PutPerson(int id, Person entity)
-		//{
-		//	if (id != entity.Id)
-		//	{
-		//		return BadRequest();
-		//	}
-
-		//	_personRepository.Entry(entity).State = EntityState.Modified;
-
-		//	try
-		//	{
-		//		await _personRepository.SaveChangesAsync();
-		//	}
-		//	catch (DbUpdateConcurrencyException)
-		//	{
-		//		if (!PersonExists(id))
-		//		{
-		//			return NotFound();
-		//		}
-		//		else
-		//		{
-		//			throw;
-		//		}
-		//	}
-
-		//	return NoContent();
-		//}
-
 		//// POST: api/Entities
 		[HttpPost]
 		public ActionResult<Person> PostPerson(Person person)
 		{
 			_personRepository.AddPerson(person);
 			return CreatedAtAction("GetPerson", new { id = person.Id }, person);
+		}
+
+		//// PUT: api/Entities
+		[HttpPut]
+		public async Task<ActionResult<Person>> PutPerson(Person person)
+		{
+			var id = person.Id;
+			var personExists = await PersonExists(id);
+			if (!personExists)
+			{
+				return BadRequest($"Person with Id: {id} does not exist.");
+			}
+
+			_personRepository.UpdatePerson(person);
+
+			return CreatedAtAction("GetPerson", new { id }, person);
 		}
 
 		//// DELETE: api/Entities/5
@@ -89,9 +75,10 @@ namespace DowjonesAPI.Controllers
 			return NoContent();
 		}
 
-		//private bool PersonExists(int id)
-		//{
-		//	return _personRepository.Persons.Any(e => e.Id == id);
-		//}
+		private async Task<bool> PersonExists(int id)
+		{
+			var person = await _personRepository.GetPerson(id);
+			return person is not null;
+		}
 	}
 }
