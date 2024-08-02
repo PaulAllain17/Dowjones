@@ -32,7 +32,6 @@ namespace DowjonesAPI.Data
 
 		public void AddPerson(Person person)
 		{
-			ProcessOwnedCompaniesOnCreation(person.OwnedCompanies);
 			persons.Add(person);
 		}
 
@@ -51,8 +50,6 @@ namespace DowjonesAPI.Data
 			var index = persons.FindIndex(p => p.Id == person.Id);
 			if (index >= 0)
 			{
-				var previousPerson = persons[index];
-				ProcessOwnedCompaniesOnCreation(person.OwnedCompanies);
 				persons[index] = person;
 			}
 		}
@@ -64,7 +61,6 @@ namespace DowjonesAPI.Data
 
 		public void AddCompany(Company company)
 		{
-			ProcessOwnedCompaniesOnCreation(company.OwnedCompanies);
 			companies.Add(company);
 		}
 
@@ -80,54 +76,6 @@ namespace DowjonesAPI.Data
 		public void RemoveCompany(Company company)
 		{
 			companies.Remove(company);
-		}
-
-		private void ProcessOwnedCompaniesOnCreation(List<OwnedCompany> ownedCompanies)
-		{
-			if (ownedCompanies != null)
-			{
-				foreach (var ownedCompany in ownedCompanies)
-				{
-					var companyFromList = companies.Find(c => c.Id == ownedCompany.CompanyId);
-					if (companyFromList == null)
-					{
-						continue;
-					}
-					else
-					{
-						if (ownedCompany.Percentage > 60)
-						{
-							companyFromList.IsControlled = true;
-						}
-					}
-				}
-			}
-		}
-
-		private void ProcessOwnedCompaniesOnUpdate(List<OwnedCompany> ownedCompanies, List<OwnedCompany> previousOwnedCompanies)
-		{
-			if (ownedCompanies != null)
-			{
-				foreach (var ownedCompany in ownedCompanies)
-				{
-					var companyFromList = companies.Find(c => c.Id == ownedCompany.CompanyId);
-					if (companyFromList == null)
-					{
-						continue;
-					}
-					else
-					{
-						if (ownedCompany.Percentage > 60)
-						{
-							companyFromList.IsControlled = true;
-						}
-						else if (previousOwnedCompanies.Find(c => c.CompanyId == ownedCompany.CompanyId).Percentage > 60)
-						{
-							companyFromList.IsControlled = false;
-						}
-					}
-				}
-			}
 		}
 	}
 }

@@ -1,5 +1,7 @@
 using DowjonesAPI.Data;
 using DowjonesAPI.Repositories;
+using DowjonesAPI.Services;
+using DowjonesAPI.Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,8 +12,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddSingleton<ICompanyService, CompanyService>();
 builder.Services.AddSingleton<IPersonRepository, PersonRepository>();
 builder.Services.AddSingleton<ICompanyRepository, CompanyRepository>();
+builder.Services.AddSingleton<ICompanyUtility, CompanyUtility>();
 builder.Services.AddSingleton<IMockedDatabase, MockedDatabase>();
 
 var app = builder.Build();

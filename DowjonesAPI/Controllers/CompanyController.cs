@@ -1,5 +1,5 @@
 ﻿using DowjonesAPI.Models;
-using DowjonesAPI.Repositories;
+using DowjonesAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DowjonesAPI.Controllers
@@ -8,25 +8,25 @@ namespace DowjonesAPI.Controllers
 	[Route("[controller]")]
 	public class CompanyController : ControllerBase
 	{
-		private readonly ICompanyRepository _companyRepository;
+		private readonly ICompanyService _companyService;
 
-		public CompanyController(ICompanyRepository companyRepository)
+		public CompanyController(ICompanyService companyService)
 		{
-			_companyRepository = companyRepository;
+			_companyService = companyService;
 		}
 
 		// GET: api/Entities
 		[HttpGet]
 		public async Task<ActionResult<IEnumerable<Company>>> GetCompanies()
 		{
-			return await _companyRepository.GetCompanies();
+			return await _companyService.GetCompanies();
 		}
 
 		// GET: api/Entities/5
 		[HttpGet("{id}")]
 		public async Task<ActionResult<Company>> GetCompany(int id)
 		{
-			var company = await _companyRepository.GetCompany(id);
+			var company = await _companyService.GetCompany(id);
 
 			if (company == null)
 			{
@@ -40,7 +40,7 @@ namespace DowjonesAPI.Controllers
 		[HttpPost]
 		public ActionResult<Company> PostCompany(Company company)
 		{
-			_companyRepository.AddCompany(company);
+			_companyService.AddCompany(company);
 			return CreatedAtAction("GetCompany", new { id = company.Id }, company);
 		}
 
@@ -49,13 +49,13 @@ namespace DowjonesAPI.Controllers
 		public async Task<ActionResult<Company>> PutCompany(Company company)
 		{
 			var id = company.Id;
-			var companyExists = await _companyRepository.CompanyExists(id);
+			var companyExists = await _companyService.CompanyExists(id);
 			if (!companyExists)
 			{
 				return BadRequest($"Company with Id: {id} does not exist.");
 			}
 
-			_companyRepository.UpdateCompany(company);
+			_companyService.UpdateCompany(company);
 
 			return CreatedAtAction("GetCompany", new { id }, company);
 		}
@@ -64,13 +64,13 @@ namespace DowjonesAPI.Controllers
 		[HttpDelete("{id}")]
 		public async Task<IActionResult> DeleteCompany(int id)
 		{
-			var company = await _companyRepository.GetCompany(id);
+			var company = await _companyService.GetCompany(id);
 			if (company == null)
 			{
 				return NotFound();
 			}
 
-			_companyRepository.RemoveCompany(company);
+			_companyService.RemoveCompany(company);
 
 			return NoContent();
 		}
