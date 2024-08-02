@@ -6,6 +6,7 @@ namespace DowjonesAPI.Utilities
 	public class CompanyUtility : ICompanyUtility
 	{
 		private readonly IMockedDatabase _mockedDatabase;
+		private const int percentageThreshold = 60;
 
 		public CompanyUtility(IMockedDatabase mockedDatabase)
 		{
@@ -25,7 +26,7 @@ namespace DowjonesAPI.Utilities
 					}
 					else
 					{
-						if (ownedCompany.Percentage > 60)
+						if (ownedCompany.Percentage > percentageThreshold)
 						{
 							_mockedDatabase.UpdateCompany(new Company
 							{
@@ -56,7 +57,7 @@ namespace DowjonesAPI.Utilities
 					}
 					else
 					{
-						if (ownedCompany.Percentage > 60)
+						if (ownedCompany.Percentage > percentageThreshold)
 						{
 							_mockedDatabase.UpdateCompany(new Company
 							{
@@ -66,7 +67,7 @@ namespace DowjonesAPI.Utilities
 								IsControlled = true
 							});
 						}
-						else if (previousOwnedCompanies.Find(c => c.CompanyId == ownedCompany.CompanyId).Percentage > 60)
+						else if (previousOwnedCompanies.Find(c => c.CompanyId == ownedCompany.CompanyId).Percentage > percentageThreshold)
 						{
 							_mockedDatabase.UpdateCompany(new Company
 							{
