@@ -30,9 +30,17 @@ namespace DowjonesAPI.Data
 			}
 		];
 
-		public void AddPerson(Person person)
+		public bool AddPerson(Person person)
 		{
+			var ownedCompanies = person.Companies;
+
+			var success = ProcessOwnedCompanies(ownedCompanies);
+			if (!success)
+			{
+				return false;
+			}
 			persons.Add(person);
+			return true;
 		}
 
 		public async Task<List<Person>> GetPeople() => persons;
@@ -59,9 +67,17 @@ namespace DowjonesAPI.Data
 		public async Task<Company?> GetCompany(int id)
 			=> companies.Find(c => c.Id == id);
 
-		public void AddCompany(Company company)
+		public bool AddCompany(Company company)
 		{
+			var ownedCompanies = company.Companies;
+
+			var success = ProcessOwnedCompanies(ownedCompanies);
+			if (!success)
+			{
+				return false;
+			}
 			companies.Add(company);
+			return true;
 		}
 
 		public void UpdateCompany(Company company)
@@ -76,6 +92,30 @@ namespace DowjonesAPI.Data
 		public void RemoveCompany(Company company)
 		{
 			companies.Remove(company);
+		}
+
+		private bool ProcessOwnedCompanies(List<OwnedCompany> ownedCompanies)
+		{
+			if (ownedCompanies != null)
+			{
+				foreach (var ownedCompany in ownedCompanies)
+				{
+					var companyFromList = companies.Find(c => c.Id == ownedCompany.CompanyId);
+					if (companyFromList == null)
+					{
+						return false;
+					}
+					else
+					{
+						if (ownedCompany.Percentage > 60)
+						{
+							companyFromList.IsControlled = true;
+						}
+					}
+				}
+			}
+
+			return true;
 		}
 	}
 }

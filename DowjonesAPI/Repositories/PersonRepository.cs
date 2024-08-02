@@ -12,9 +12,9 @@ namespace DowjonesAPI.Repositories
 			_mockedDatabase = mockDatabase;
 		}
 
-		public void AddPerson(Person person)
+		public bool AddPerson(Person person)
 		{
-			_mockedDatabase.AddPerson(person);
+			return _mockedDatabase.AddPerson(person);
 		}
 
 		public Task<List<Person>> GetPeople()
