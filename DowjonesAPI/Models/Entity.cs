@@ -4,6 +4,6 @@
 	{
 		public int Id { get; set; }
 		public required string Name { get; set; }
-		public List<OwnedCompany>? Companies { get; set; }
+		public List<OwnedCompany>? OwnedCompanies { get; set; }
 	}
 }

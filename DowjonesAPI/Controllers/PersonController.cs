@@ -40,16 +40,8 @@ namespace DowjonesAPI.Controllers
 		[HttpPost]
 		public ActionResult<Person> PostPerson(Person person)
 		{
-			var success = _personRepository.AddPerson(person);
-
-			if (success)
-			{
-				return CreatedAtAction("GetPerson", new { id = person.Id }, person);
-			}
-			else
-			{
-				return BadRequest();
-			}
+			_personRepository.AddPerson(person);
+			return CreatedAtAction("GetPerson", new { id = person.Id }, person);
 		}
 
 		//// PUT: api/Entities

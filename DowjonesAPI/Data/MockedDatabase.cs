@@ -30,17 +30,10 @@ namespace DowjonesAPI.Data
 			}
 		];
 
-		public bool AddPerson(Person person)
+		public void AddPerson(Person person)
 		{
-			var ownedCompanies = person.Companies;
-
-			var success = ProcessOwnedCompanies(ownedCompanies);
-			if (!success)
-			{
-				return false;
-			}
+			ProcessOwnedCompaniesOnCreation(person.OwnedCompanies);
 			persons.Add(person);
-			return true;
 		}
 
 		public async Task<List<Person>> GetPeople() => persons;
@@ -58,6 +51,8 @@ namespace DowjonesAPI.Data
 			var index = persons.FindIndex(p => p.Id == person.Id);
 			if (index >= 0)
 			{
+				var previousPerson = persons[index];
+				ProcessOwnedCompaniesOnCreation(person.OwnedCompanies);
 				persons[index] = person;
 			}
 		}
@@ -67,17 +62,10 @@ namespace DowjonesAPI.Data
 		public async Task<Company?> GetCompany(int id)
 			=> companies.Find(c => c.Id == id);
 
-		public bool AddCompany(Company company)
+		public void AddCompany(Company company)
 		{
-			var ownedCompanies = company.Companies;
-
-			var success = ProcessOwnedCompanies(ownedCompanies);
-			if (!success)
-			{
-				return false;
-			}
+			ProcessOwnedCompaniesOnCreation(company.OwnedCompanies);
 			companies.Add(company);
-			return true;
 		}
 
 		public void UpdateCompany(Company company)
@@ -94,7 +82,7 @@ namespace DowjonesAPI.Data
 			companies.Remove(company);
 		}
 
-		private bool ProcessOwnedCompanies(List<OwnedCompany> ownedCompanies)
+		private void ProcessOwnedCompaniesOnCreation(List<OwnedCompany> ownedCompanies)
 		{
 			if (ownedCompanies != null)
 			{
@@ -103,7 +91,7 @@ namespace DowjonesAPI.Data
 					var companyFromList = companies.Find(c => c.Id == ownedCompany.CompanyId);
 					if (companyFromList == null)
 					{
-						return false;
+						continue;
 					}
 					else
 					{
@@ -114,8 +102,32 @@ namespace DowjonesAPI.Data
 					}
 				}
 			}
+		}
 
-			return true;
+		private void ProcessOwnedCompaniesOnUpdate(List<OwnedCompany> ownedCompanies, List<OwnedCompany> previousOwnedCompanies)
+		{
+			if (ownedCompanies != null)
+			{
+				foreach (var ownedCompany in ownedCompanies)
+				{
+					var companyFromList = companies.Find(c => c.Id == ownedCompany.CompanyId);
+					if (companyFromList == null)
+					{
+						continue;
+					}
+					else
+					{
+						if (ownedCompany.Percentage > 60)
+						{
+							companyFromList.IsControlled = true;
+						}
+						else if (previousOwnedCompanies.Find(c => c.CompanyId == ownedCompany.CompanyId).Percentage > 60)
+						{
+							companyFromList.IsControlled = false;
+						}
+					}
+				}
+			}
 		}
 	}
 }

@@ -12,9 +12,9 @@ namespace DowjonesAPI.Repositories
 			_mockedDatabase = mockDatabase;
 		}
 
-		public bool AddCompany(Company company)
+		public void AddCompany(Company company)
 		{
-			return _mockedDatabase.AddCompany(company);
+			_mockedDatabase.AddCompany(company);
 		}
 
 		public Task<List<Company>> GetCompanies()

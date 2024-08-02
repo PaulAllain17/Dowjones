@@ -4,7 +4,7 @@ namespace DowjonesAPI.Repositories
 {
 	public interface IPersonRepository
 	{
-		bool AddPerson(Person person);
+		void AddPerson(Person person);
 		Task<List<Person>> GetPeople();
 		Task<Person?> GetPerson(int id);
 		void RemovePerson(Person person);
