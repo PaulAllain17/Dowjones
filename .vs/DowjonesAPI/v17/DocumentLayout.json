@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2E2A693-26DC-47F5-928A-E9EF47F259A3}|DowjonesAPIUnitTests\\DowjonesAPIUnitTests.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapiunittests\\controllers\\personcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2E2A693-26DC-47F5-928A-E9EF47F259A3}|DowjonesAPIUnitTests\\DowjonesAPIUnitTests.csproj|solutionrelative:dowjonesapiunittests\\controllers\\personcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2E2A693-26DC-47F5-928A-E9EF47F259A3}|DowjonesAPIUnitTests\\DowjonesAPIUnitTests.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapiunittests\\repositories\\personrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E2A693-26DC-47F5-928A-E9EF47F259A3}|DowjonesAPIUnitTests\\DowjonesAPIUnitTests.csproj|solutionrelative:dowjonesapiunittests\\repositories\\personrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2E2A693-26DC-47F5-928A-E9EF47F259A3}|DowjonesAPIUnitTests\\DowjonesAPIUnitTests.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapiunittests\\controllers\\companycontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2E2A693-26DC-47F5-928A-E9EF47F259A3}|DowjonesAPIUnitTests\\DowjonesAPIUnitTests.csproj|solutionrelative:dowjonesapiunittests\\controllers\\companycontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E2A693-26DC-47F5-928A-E9EF47F259A3}|DowjonesAPIUnitTests\\DowjonesAPIUnitTests.csproj|c:\\users\\paula\\documents\\repositories\\dowjones\\dowjonesapi\\dowjonesapiunittests\\repositories\\companyrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E2A693-26DC-47F5-928A-E9EF47F259A3}|DowjonesAPIUnitTests\\DowjonesAPIUnitTests.csproj|solutionrelative:dowjonesapiunittests\\repositories\\companyrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,25 +21,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1549,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 1371,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPIUnitTests\\Controllers\\PersonControllerTests.cs",
-              "RelativeDocumentMoniker": "DowjonesAPIUnitTests\\Controllers\\PersonControllerTests.cs",
-              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPIUnitTests\\Controllers\\PersonControllerTests.cs",
-              "RelativeToolTip": "DowjonesAPIUnitTests\\Controllers\\PersonControllerTests.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAswGAAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T13:51:50.339Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -45,9 +36,35 @@
               "RelativeDocumentMoniker": "DowjonesAPIUnitTests\\Controllers\\CompanyControllerTests.cs",
               "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPIUnitTests\\Controllers\\CompanyControllerTests.cs",
               "RelativeToolTip": "DowjonesAPIUnitTests\\Controllers\\CompanyControllerTests.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwCEAAAADAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCQAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T12:43:46.954Z",
+              "WhenOpened": "2024-08-03T14:38:51.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonRepositoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPIUnitTests\\Repositories\\PersonRepositoryTests.cs",
+              "RelativeDocumentMoniker": "DowjonesAPIUnitTests\\Repositories\\PersonRepositoryTests.cs",
+              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPIUnitTests\\Repositories\\PersonRepositoryTests.cs",
+              "RelativeToolTip": "DowjonesAPIUnitTests\\Repositories\\PersonRepositoryTests.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAYwDMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T14:35:22.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompanyRepositoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPIUnitTests\\Repositories\\CompanyRepositoryTests.cs",
+              "RelativeDocumentMoniker": "DowjonesAPIUnitTests\\Repositories\\CompanyRepositoryTests.cs",
+              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPIUnitTests\\Repositories\\CompanyRepositoryTests.cs",
+              "RelativeToolTip": "DowjonesAPIUnitTests\\Repositories\\CompanyRepositoryTests.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAA1wCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T14:00:54.953Z",
               "EditorCaption": ""
             }
           ]
