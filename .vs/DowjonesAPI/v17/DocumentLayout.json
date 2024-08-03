@@ -58,11 +58,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 557,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompanyUtility.cs",
+              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Utilities\\CompanyUtility.cs",
+              "RelativeDocumentMoniker": "DowjonesAPI\\Utilities\\CompanyUtility.cs",
+              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Utilities\\CompanyUtility.cs",
+              "RelativeToolTip": "DowjonesAPI\\Utilities\\CompanyUtility.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAYwAUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T16:37:27.577Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -72,7 +85,7 @@
               "RelativeDocumentMoniker": "DowjonesAPIUnitTests\\CompanyUtilityTests.cs",
               "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPIUnitTests\\CompanyUtilityTests.cs",
               "RelativeToolTip": "DowjonesAPIUnitTests\\CompanyUtilityTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAACAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAowFQAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T16:23:14.066Z",
               "EditorCaption": ""
@@ -87,8 +100,7 @@
               "RelativeToolTip": "DowjonesAPI\\Services\\PersonService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:41:33.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T15:41:33.255Z"
             },
             {
               "$type": "Document",
@@ -100,8 +112,7 @@
               "RelativeToolTip": "DowjonesAPI\\Models\\Person.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T16:08:36.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T16:08:36.687Z"
             },
             {
               "$type": "Document",
@@ -113,8 +124,7 @@
               "RelativeToolTip": "DowjonesAPI\\Services\\IPersonService.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAjwAQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:44:19.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T15:44:19.855Z"
             },
             {
               "$type": "Document",
@@ -126,8 +136,7 @@
               "RelativeToolTip": "DowjonesAPI\\Controllers\\PersonController.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAAwEgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:42:10.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T15:42:10.764Z"
             },
             {
               "$type": "Document",
@@ -139,8 +148,7 @@
               "RelativeToolTip": "DowjonesAPI\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:38:12.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T15:38:12.272Z"
             },
             {
               "$type": "Document",
@@ -152,8 +160,7 @@
               "RelativeToolTip": "DowjonesAPI\\Data\\MockedDatabase.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAEwCAAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:35:31.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T15:35:31.553Z"
             },
             {
               "$type": "Document",
@@ -165,8 +172,7 @@
               "RelativeToolTip": "DowjonesAPI\\Utilities\\ICompanyUtility.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:21:41.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T15:21:41.575Z"
             },
             {
               "$type": "Document",
@@ -178,8 +184,7 @@
               "RelativeToolTip": "DowjonesAPI\\Repositories\\CompanyRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:19:22.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T15:19:22.551Z"
             },
             {
               "$type": "Document",
@@ -191,8 +196,7 @@
               "RelativeToolTip": "DowjonesAPI\\Services\\ICompanyService.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAjwAQAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:18:21.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T15:18:21.259Z"
             },
             {
               "$type": "Document",
@@ -204,27 +208,7 @@
               "RelativeToolTip": "DowjonesAPI\\Controllers\\CompanyController.cs",
               "ViewState": "AQIAAC4AAAAAAAAAAAAkwEgAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T08:40:28.753Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 310,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompanyUtility.cs",
-              "DocumentMoniker": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Utilities\\CompanyUtility.cs",
-              "RelativeDocumentMoniker": "DowjonesAPI\\Utilities\\CompanyUtility.cs",
-              "ToolTip": "C:\\Users\\paula\\Documents\\Repositories\\Dowjones\\DowjonesAPI\\DowjonesAPI\\Utilities\\CompanyUtility.cs",
-              "RelativeToolTip": "DowjonesAPI\\Utilities\\CompanyUtility.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAgwCMAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:21:00.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T08:40:28.753Z"
             }
           ]
         }
